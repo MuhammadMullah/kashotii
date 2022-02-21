@@ -16,7 +16,7 @@ config :kashotii, KashotiiWeb.Endpoint,
   secret_key_base: "y+SaPPI2+F4BMg+rI0SzrfHI8Z7mby2HbGX7hfP03REa/91RKzNkgZQ4sqN4Hpld",
   render_errors: [view: KashotiiWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Kashotii.PubSub,
-  live_view: [signing_salt: "4hBRuX0w"]
+  live_view: [signing_salt: "GXiCLjOlkmpyqyi1LvNH3LPlY4cVLZCa"]
 
 # Configures Elixir's Logger
 config :logger, :console,
