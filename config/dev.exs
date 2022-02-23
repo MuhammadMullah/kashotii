@@ -27,6 +27,14 @@ config :kashotii, KashotiiWeb.Endpoint,
       "development",
       "--watch-stdin",
       cd: Path.expand("../assets", __DIR__)
+    ],
+    npx: [
+      "tailwindcss",
+      "--input=css/app.css",
+      "--output=../priv/static/assets/app.css",
+      "--postcss",
+      "--watch",
+      cd: Path.expand("../assets", __DIR__)
     ]
   ]
 

@@ -24,6 +24,8 @@ defmodule Kashotii.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import Kashotii.DataCase
+
+      import Kashotii.Factory
     end
   end
 

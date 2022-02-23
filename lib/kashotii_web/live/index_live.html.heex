@@ -1,0 +1,12 @@
+<.form let={f} for={@changeset} phx-change="validate" phx-submit="save">
+
+  <%= text_input f, :original_url %>
+  <%= error_tag f, :original_url %>
+
+  <%= submit "Save", class: "bg-blue-500 hover:bg-blue-700 text-white" %>
+</.form>
+
+
+<%= for url <- @urls do %>
+  <%= "#{Endpoint.url()}/#{url.identifier}" %>
+<% end %>

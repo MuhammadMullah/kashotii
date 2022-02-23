@@ -47,7 +47,9 @@ defmodule Kashotii.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:phoenix_live_view, "~> 0.17.6"},
-      {:floki, ">= 0.30.0", only: :test}
+      {:floki, ">= 0.30.0", only: :test},
+      {:ex_machina, "~> 2.7"},
+      {:faker, "~> 0.17.0"}
     ]
   end
 
